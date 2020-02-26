@@ -13,7 +13,8 @@ id 'com.google.cloud.tools.jib' version '2.0.0'
 
 jib {
     to {
-        image = 'michaeldqin/spring-docker:1.0.0'
+        image = 'michaeldqin/spring-docker'
+        tags = ['1.0.0','latest']
         auth {
             username = dockerhub_user // Defined in 'gradle.properties'.
             password = dockerhub_password // Defined in 'gradle.properties'.
