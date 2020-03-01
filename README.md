@@ -9,8 +9,6 @@ Using Jib to build Spring-Boot Docker Image, and check it into Docker Hub.
 ```groovy
 id 'com.google.cloud.tools.jib' version '2.0.0'
 
-...
-
 jib {
     to {
         image = 'michaeldqin/spring-docker'
@@ -26,6 +24,6 @@ jib {
 
 ### Usage
 
-```jshelllanguage
+```shell
 gradle jib
 ```
